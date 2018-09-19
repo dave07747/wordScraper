@@ -50,7 +50,7 @@ public class WebScrape {
     }
 
     public static int wordCount(final String url) {
-        return urlToString(url).toLowerCase().split(" ").length;
+        return urlToString(url).toLowerCase().split("[^a-zA-Z0-9]").length;
     }
 
     public static void main(String[] unused) {
